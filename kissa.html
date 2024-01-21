@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<audio id="myAudio" autoplay>
+  <source src="./kissa.wav" type="audio/wav">
+ 
+</audio>
+
+<p>
+  <button onclick="playAudio()">KUUNTELE KISSAN LAULU</button>
+  
+ <button onclick="pauseAudio()">HILJENNÄ KISSA</button>
+</p>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+
+  function pauseAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.pause();
+  }
+</script>
+<body>
+
+<img src="kissa.jpg" alt="kissa" usemap="#kissa">
+
+<map name="kissa">
+  <area shape="rect" coords="600,170,638,216" alt="avain" href="avain.html">
+  
+</map>
+
+
+<p>
+
+<a href="maailmanpyora2.html">PALAA TAKAISIN</a>
+</p>
+<p>
+<p>
+
+</body>
+</html>

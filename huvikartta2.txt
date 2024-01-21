@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<img src="huvikartta.jpg" alt="huvipuisto" usemap="#huvipuisto">
+
+<map name="huvipuisto">
+  <area shape="rect" coords="265,313,392,415" alt="kummitusjuna" href="kummitus2.jpg">
+   <area shape="rect" coords="680,290,820,440" alt="possujuna" href="possujuna2.html">
+<area shape="rect" coords="842,280,950,480" alt="maailmanpyora" href="maailmanpyora2.html">
+</map>
+
+
+<p>
+
+
+</p>
+<p>
+<p>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<body>
+
+ <audio id="myAudio" autoplay loop>
+  <source src="./intro.wav" type="audio/wav">
+ 
+</audio>
+
+<p>
+  <button onclick="playAudio()">INTRO MUSIC</button>
+  <button onclick="pauseAudio()">NO INTRO MUSIC</button>
+</p>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+
+  function pauseAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.pause();
+  }
+</script>
+
+<head> 
+    <title> 
+        TACOMAN! 
+    </title> 
+</head> 
+  
+<body> 
+    <!-- The div that will have the  
+        blinking background -->
+    <div id="blinkDiv" style="width: 800px;  
+                height: 300px;  
+                padding: 20px;  
+                text-align: center;  
+                font-size: 64px;"> 
+                  
+        <!-- Content inside the div -->
+        <h1 style="color: green;"> 
+            TACOMAN!
+        </h1> 
+    </div> 
+  
+    <script> 
+  
+        // Get the div element by its ID 
+        const blinkDiv = 
+            document.getElementById('blinkDiv'); 
+  
+        // An array of colors to be used for blinking 
+        const colors = ['#ff0000', 'black', '#0000ff']; 
+  
+        // Variable to keep track of the 
+        // current color index 
+        let currentColorIndex = 0; 
+  
+        // Function to toggle the background 
+        // color of the div 
+        function blinkBackground() { 
+            blinkDiv.style.backgroundColor = 
+                colors[currentColorIndex]; 
+            currentColorIndex = 
+                (currentColorIndex + 1) % colors.length; 
+        } 
+  
+        // Start the blinking by setting an interval  
+        // that calls the blinkBackground  
+        // function every 300ms (0,3 second) 
+        const blinkingInterval = 
+            setInterval(blinkBackground, 300); 
+  
+        // To stop blinking after 100 seconds,  
+        // use setTimeout to clear the interval 
+        setTimeout(() => { 
+            clearInterval(blinkingInterval); 
+        }, 50000); 
+    </script> 
+<p>
+<a href="tacoman.html">ALOITA</a>
+</p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>
+VARO TACOMAN!SIILI ON ÄKÄINEN!
+</h1>
+
+
+<script>
+function taco(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "tacokick.jpg"
+} else {
+    pic = "tacopoor.jpg"
+  
+  
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="siiliattack.jpg" width="600" height="300">
+
+<p>
+
+
+<button type="button" onclick="taco(0)">Potkaise siiliä</button>
+<button type="button" onclick="taco(1)">Maksa velat</button>
+
+</p>
+<p>
+<p>
+<a href="pankki.html">Käy pankissa</a>
+</p>
+</p>
+<a href="tacoman.html">palaa takaisin</a>
+
+</body>
+</html>
