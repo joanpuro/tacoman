@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<audio id="myAudio" autoplay loop>
+  <source src="./dip.wav" type="audio/wav">
+ 
+</audio>
+
+<p>
+  <button onclick="playAudio()">TACO MUSIC</button>
+  <button onclick="pauseAudio()">NO TACO MUSIC</button>
+</p>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+
+  function pauseAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.pause();
+  }
+</script>
+
+<body>
+
+
+
+<h1>
+TACOMAN!
+</h1>
+
+
+<script>
+function taco(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "tacoman.jpg"
+  } else {
+    pic = "tacomandip.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="tacoman.jpg" width="300" height="300">
+
+<p>
+
+<button type="button" onclick="taco(1)">Anna Tacomanille dippiä!</button>
+<button type="button" onclick="taco(0)">Ota dippi pois</button>
+</p>
+<p>
+<a href="tacovessa.html">Käy vessassa</a>
+<p>
+
+<a href="piha.html">Mene pihalle</a>
+</p>
+<p>
+<a href="uinti.html">Mene uimaan</a>
+</p>
+</body>
+</html>

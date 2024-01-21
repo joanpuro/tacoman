@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h3>
+<p>Tacoman kohtaa häijyn rotan, jolla on päällään uusi lampaanvillapaita.
+<p>Ei kai rotta ole tehnyt karitsasta itselleen paitaa!
+
+</h3>
+
+
+<script>
+function taco(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "rottakehu.jpg"
+} else {
+    pic = "rottapaita.jpg"
+  
+  
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="rotta.jpg" width="600" height="300">
+
+<p>
+
+
+<button type="button" onclick="taco(0)">Kehu rotan villapaitaa</button>
+<button type="button" onclick="taco(1)">Yritä napata villapaita</button>
+
+</p>
+<p>
+
+</p>
+<a href="kioski.html">TAKAISIN</a>
+
+</body>
+</html>

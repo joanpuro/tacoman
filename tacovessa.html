@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<audio id="myAudio" autoplay loop>
+  <source src="./vessa.wav" type="audio/wav">
+ 
+</audio>
+
+<p>
+  <button onclick="playAudio()">TOILET MUSIC</button>
+  <button onclick="pauseAudio()">NO TOILET MUSIC</button>
+</p>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+
+  function pauseAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.pause();
+  }
+</script>
+
+<body>
+
+
+<script>
+function taco(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "tacomanwc.jpg"
+  } else {
+    pic = "tacomantarve.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="tacomanwc.jpg" width="300" height="300">
+
+<p>
+
+<button type="button" onclick="taco(1)">Tee tarpeet</button>
+
+</p>
+<p>
+<a href="tacoman.html">palaa takaisin</a>
+</body>
+</html>

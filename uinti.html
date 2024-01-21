@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>
+TACOMAN!
+</h1>
+
+
+<script>
+function taco(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "iceuinti.jpg"
+  } else {
+    pic = "chiliuinti.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="uinti.jpg" width="600" height="300">
+
+<p>
+
+<button type="button" onclick="taco(1)">Ui chilidipissä</button>
+<button type="button" onclick="taco(0)">Ui jäätelössä</button>
+
+</p>
+<p>
+<a href="tacoman.html">palaa takaisin</a>
+</body>
+</html>
